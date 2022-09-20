@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b9df392d-d520-4a1d-997b-c22a8c93f594" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/img/about.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/img/apple-touch-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/img/chefs-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/img/chefs/chefs-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/img/chefs/chefs-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/img/chefs/chefs-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/img/event-birthday.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/img/event-custom.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/img/event-private.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/img/events-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/img/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/img/gallery/gallery-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/img/gallery/gallery-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/img/gallery/gallery-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/img/gallery/gallery-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/img/gallery/gallery-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/img/gallery/gallery-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/img/gallery/gallery-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/img/gallery/gallery-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/img/slide/slide-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/img/slide/slide-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/img/slide/slide-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/img/specials-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/img/specials-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/img/specials-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/img/specials-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/img/specials-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/img/testimonials-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/img/testimonials/testimonials-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/img/testimonials/testimonials-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/img/testimonials/testimonials-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/img/testimonials/testimonials-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/img/testimonials/testimonials-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/animate.css/animate.compat.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/animate.css/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/animate.css/animate.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap-icons/bootstrap-icons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap-icons/bootstrap-icons.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap-icons/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/css/bootstrap-utilities.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/css/bootstrap.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/js/bootstrap.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/js/bootstrap.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/js/bootstrap.esm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/boxicons/css/animations.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/boxicons/css/boxicons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/boxicons/css/boxicons.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/boxicons/css/transformations.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/boxicons/fonts/boxicons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/boxicons/fonts/boxicons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/boxicons/fonts/boxicons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/boxicons/fonts/boxicons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/boxicons/fonts/boxicons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/glightbox/css/glightbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/glightbox/css/glightbox.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/glightbox/css/plyr.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/glightbox/css/plyr.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/glightbox/js/glightbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/glightbox/js/glightbox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/isotope-layout/isotope.pkgd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/isotope-layout/isotope.pkgd.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/php-email-form/validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/swiper/swiper-bundle.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/assets/vendor/swiper/swiper-bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/css/bootstrap-utilities.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/css/bootstrap.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/image/1-garden-deluxe-furama-resort-tgroup-travel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/image/10953_17080216380054845067.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/image/Logo-FURAMA-RESORT.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/image/carousel_image_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/image/carousel_image_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/image/carousel_image_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/image/create_background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/image/hinh-anh-thuc-te-furama-resort.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/image/logo_furama_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/image/th.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/js/bootstrap.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/js/bootstrap.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/js/bootstrap.esm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/static/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/templates/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/templates/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_Module_5/casestudy_angular/templates/navigation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/typescript-control-flow-and-loop/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/typescript-control-flow-and-loop/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/typescript-control-flow-and-loop/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/typescript-is-prime/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/typescript-is-prime/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/typescript-is-prime/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/typescript-is-shape/ tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/typescript-is-shape/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/typescript-is-shape/src/IArea.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/typescript-is-shape/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/typescript-is-shape/src/rectangle.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/typescript-is-shape/src/shape.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/typescript-variable/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/typescript-variable/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/typescript-variable/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/untitled/typescript-promise/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/untitled/typescript-promise/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/untitled/typescript-promise/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../text.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2F25ZZT7xYby5yJAUVnRYD8OrtA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b9df392d-d520-4a1d-997b-c22a8c93f594" name="Default Changelist" comment="" />
+      <created>1663677394798</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663677394798</updated>
+      <workItem from="1663677396189" duration="114000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1663677450279">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1663677450279" />
+  </component>
+</project>
