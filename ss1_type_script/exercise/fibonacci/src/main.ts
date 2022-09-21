@@ -1,3 +1,4 @@
+
 let nFirst:number = 0;
 let nAfter:number = 1;
 let nextTerm:number = 0;
