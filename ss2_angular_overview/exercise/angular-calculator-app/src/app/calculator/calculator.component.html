@@ -1,0 +1,16 @@
+<label>First Number: </label>
+<input type="number" [(ngModel)]="firstNumber">
+<br>
+<br>
+<label>Last Number: </label>
+<input type="number" [(ngModel)]="lastNumber">
+<br>
+<br>
+<button (click)="calculator($event.target.value)" value="+">+</button>
+<button (click)="calculator($event.target.value)" value="-">-</button>
+<button (click)="calculator($event.target.value)" value="*">*</button>
+<button (click)="calculator($event.target.value)" value="/">/</button>
+<br>
+<br>
+<div>result: {{ result }}</div>
+
