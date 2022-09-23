@@ -13,6 +13,7 @@
 body {
   font-family: "Poppins", sans-serif;
   color: #444444;
+  background-color: #f9f9f9;
 }
 
 a {
@@ -560,7 +561,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 10px 0;
 }
 
 .section-bg {
