@@ -3,24 +3,24 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FacilityComponent } from './facility/facility.component';
+import { FacilityListComponent } from './furama/facility/facility-list/facility-list.component';
 import { HomeComponent } from './local-web/home/home.component';
 import { NavComponent } from './local-web/nav/nav.component';
 import { FooterComponent } from './local-web/footer/footer.component';
-import { CustomerComponent } from './customer/customer.component';
-import { ContractComponent } from './contract/contract.component';
-import { EmployeeComponent } from './employee/employee.component';
+import { CustomerListComponent } from './furama/customer/customer-list/customer-list.component';
+import { ContractListComponent } from './furama/contract/contract-list/contract-list.component';
+import { EmployeeListComponent } from './furama/employee/employee-list/employee-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FacilityComponent,
+    FacilityListComponent,
     HomeComponent,
     NavComponent,
     FooterComponent,
-    CustomerComponent,
-    ContractComponent,
-    EmployeeComponent
+    CustomerListComponent,
+    ContractListComponent,
+    EmployeeListComponent,
   ],
   imports: [
     BrowserModule,

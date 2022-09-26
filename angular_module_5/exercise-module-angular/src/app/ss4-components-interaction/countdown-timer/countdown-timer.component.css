@@ -1,0 +1,13 @@
+button {
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: orange;
+  border: none;
+  color: #673ab7;
+}
+
+.timer {
+  text-align: center;
+  font-size: 200px;
+  font-family: sans-serif;
+}
