@@ -1,0 +1,71 @@
+<div class="row div mt-5" style="justify-content: center;">
+  <form [formGroup]="subscribeForm">
+    <h5 class="text-center">ĐĂNG KÍ</h5>
+    <div class="col-12 mt-2">
+      <label >Email</label>
+      <input type="text"  class="form-control"
+             placeholder="Le Van A" name="name" formControlName="email">
+      <p style="color: red" *ngIf="!email.valid && (email.dirty ||email.touched)">Email không đúng định dạng</p>
+    </div>
+
+    <div class="col-12 mt-2">
+      <label>Mật khẩu</label>
+      <input type="text"  class="form-control"  required name="card" formControlName="password">
+      <p style="color: red" *ngIf="!password.valid && (password.dirty ||password.touched) ">Mật khẩu ít nhất 6 kí tự</p>
+    </div>
+
+    <div class="col-md-12 mt-2">
+      <label >Xác nhận mật khẩu</label>
+      <input type="text" class="form-control "  required formControlName="confirmPassword">
+      <p style="color: red" *ngIf="subscribeForm.errors?.mismatched &&(subscribeForm.controls.confirmPassword?.dirty|| subscribeForm.controls.confirmPassword?.touched)">Mật khẩu không trùng khớp</p>
+    </div>
+
+    <div class="col-md-12 mt-2">
+      <label >Số tuổi</label>
+      <input type="text" class="form-control" placeholder="" required formControlName="age">
+      <p style="color: red" *ngIf="!age.valid && (age.dirty ||age.touched)">Số tuổi phải >= 18</p>
+    </div>
+
+    <div class="col-md-12 mt-2">
+      <label>Số điện thoại</label>
+      <input type="text"  class="form-control" placeholder="084+XXXXXXX" name="phone" formControlName="phone">
+      <p style="color: red" *ngIf="!phone.valid && (phone.dirty ||phone.touched)">Số điện thoại không đúng định dạng</p>
+    </div>
+
+    <div class="col-12 mt-2">
+      <label >Giới tính</label>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-4"> <input class="form-check-input" type="radio" value="false" name="gender" formControlName="gender" >Nữ</div>
+        <div class="col-md-6"><input class="form-check-input" type="radio" value="true" name="gender" formControlName="gender">Nam</div>
+      </div>
+      <p style="color: red" *ngIf="!gender.valid && (gender.dirty ||gender.touched)">Chọn giới tính</p>
+    </div>
+
+    <div class="col-12 mt-2">
+      <label >Thành phố</label>
+      <select  class="form-select"  formControlName="country">
+        <option value="choose">Chọn thành phố</option>
+        <option *ngFor="let item of subscribe" [ngValue]="item">{{item.name}}</option>
+      </select>
+      <p style="color: red" *ngIf="!country.valid && (country.dirty ||country.touched)">Vui lòng nhập thông tin!</p>
+    </div>
+
+    <div class="col-12 mt-2">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+        <label class="form-check-label" for="invalidCheck">
+          Agree to terms and conditions
+        </label>
+        <div class="invalid-feedback">
+          You must agree before submitting.
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 text-center mt-2" style="margin-top: 10px;">
+      <button class="btn text-white bg-danger" type="submit" [disabled]="!subscribeForm.valid">Subscribe</button>
+    </div>
+  </form>
+</div>
+

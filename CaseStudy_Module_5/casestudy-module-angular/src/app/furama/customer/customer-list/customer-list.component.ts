@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Customer} from "../../../model/customer/customer";
+import {CustomerType} from "../../../model/customer/customer-type";
 
 @Component({
   selector: 'app-customer',
@@ -7,6 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomerListComponent implements OnInit {
 
+  valueDelete = [];
+  customerList:Customer[] = [];
+  customerTypeList:CustomerType[] = [];
+  
   constructor() { }
 
   ngOnInit(): void {
