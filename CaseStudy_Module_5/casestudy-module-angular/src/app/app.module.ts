@@ -10,6 +10,10 @@ import { FooterComponent } from './local-web/footer/footer.component';
 import { CustomerListComponent } from './furama/customer/customer-list/customer-list.component';
 import { ContractListComponent } from './furama/contract/contract-list/contract-list.component';
 import { EmployeeListComponent } from './furama/employee/employee-list/employee-list.component';
+import { CustomerCreateComponent } from './furama/customer/customer-create/customer-create.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import { BodyComponent } from './local-web/body/body.component';
+
 
 @NgModule({
   declarations: [
@@ -21,9 +25,13 @@ import { EmployeeListComponent } from './furama/employee/employee-list/employee-
     CustomerListComponent,
     ContractListComponent,
     EmployeeListComponent,
+    CustomerCreateComponent,
+    BodyComponent,
+
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     AppRoutingModule
   ],
   providers: [],

@@ -1,7 +1,8 @@
+<app-nav></app-nav>
 <div class="container-fluid" style="margin-top: 20px;">
     <h2 class="text-center">DANH SÁCH KHÁCH HÀNG</h2>
     <div class="header-panel text-center">
-      <button href="" type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
+      <button routerLink="/customer/create" type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
               data-bs-target="#addCustomer" aria-expanded="false">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus"
              viewBox="0 0 16 16">
@@ -27,36 +28,33 @@
           <th>Loại khách hàng</th>
           <th>Sửa</th>
           <th>Xóa</th>
-          <th>View</th>
+          <th>Xem chi tiết</th>
         </tr>
       </thead>
       <tbody>
-      <tr>
-        <td>1</td>
-        <td>abc</td>
-        <td>abc</td>
-        <td>Nữ</td>
-        <td>abc</td>
-        <td>abc</td>
-        <td>abc</td>
-        <td>abc</td>
-        <td>abc</td>
+      <tr *ngFor="let item of customerList;index as i">
+        <td>{{i+1}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.dateOfBirth}}</td>
+        <td *ngIf="item.gender == true">Nam</td>
+        <td *ngIf="item.gender == false">Nữ</td>
+        <td>{{item.idCard}}</td>
+        <td>{{item.phoneNumber}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.address}}</td>
+        <td>{{item.customerType.name}}</td>
+        <td><button class="btn btn-success" [routerLink]="['/customer/update', item.id]">Sửa</button></td>
         <td>
-          <a class="btn btn-outline-success">Edit</a>
-        </td>
-        <td>
-          <!-- Button trigger modal -->
-          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
-                  data-bs-target="#modelId"
-                  onclick="objDelete(this.value)">
-            Delete
+          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                  (click)="deleteCustomer(item)">
+            Xóa
           </button>
         </td>
         <td>
-          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                   data-bs-target="#modelView"
                   onclick="objView(this.value)">
-            View
+            Xem
           </button>
         </td>
       </tr>
@@ -65,252 +63,107 @@
 
   </div>
 
-  <form action="/delete" method="post">
-    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
-         aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title" id="modelTitleId">Delete Customer</h4>
-            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <span>Bạn có thực sự muốn xóa? <span class="text-danger" id="nameDelete"></span></span>
-            <input type="text" hidden id="idDelete" name="id">
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Từ chối</button>
-            <input type="submit" class="btn btn-primary" value="Xóa">
-          </div>
-        </div>
-      </div>
-    </div>
-  </form>
-
-  <!--     Modal View-->
-  <div class="modal fade " id="modelView" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
-       aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content ">
-        <div class="modal-header bg-info text-center text-white">
-          <h4 class="modal-title" id="modelViewId">View Customer</h4>
-          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+  <!-- ModalDelete -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <div class="mb-3">
-            Name Product: <span id="name"></span>
-          </div>
-          <div class="mb-3">
-            Price: <span id="dateOfBirth"></span>
-          </div>
-          <div class="mb-3">
-            Description: <span id="gender"></span>
-          </div>
-          <div class="mb-3">
-            Producer: <span id="idCard"></span>
-          </div>
-          <div class="mb-3">
-            Producer: <span id="phoneNumber"></span>
-          </div>
-          <div class="mb-3">
-            Producer: <span id="email"></span>
-          </div>
-          <div class="mb-3">
-            Producer: <span id="address"></span>
-          </div>
-          <div class="mb-3">
-            Producer: <span id="customerType"></span>
-          </div>
+          <p>You want to delete name : <span style="color: red">{{deleteName}}</span></p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Từ chối</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- The mess Modal -->
-  <div class="modal" id="messModal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header bg-success">
-          <h4 class="modal-title text-white">Message</h4>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <p id="messtext" class="fw-bold"></p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" (click)="delete(deleteId)" data-bs-dismiss="modal" >Delete</button>
         </div>
       </div>
     </div>
   </div>
 
 
-  <!-- Modal add Facility -->
-  <div class="modal fade" id="addCustomer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-body container-fluid" style="background-color: #92d995;border-radius: 5px;">
-          <div class="container  mt-2 p-2 mb-2" style="border: 1px solid grey;">
-            <form th:action="@{/create}" method="post" th:object="${customerDto}">
-              <h5 class="text-center">THÊM MỚI KHÁCH HÀNG</h5>
-              <div class="col-12">
-                <label class="form-label">Họ tên</label>
-                <input type="text" class="form-control" th:field="*{name}">
-              </div>
-              <div class="mb-3 text-danger" th:errors="*{name}"></div>
+<!--  &lt;!&ndash; Modal add Facility &ndash;&gt;-->
+<!--  <div class="modal fade" id="addCustomer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">-->
+<!--    <div class="modal-dialog">-->
+<!--      <div class="modal-content">-->
+<!--        <div class="modal-body container-fluid" style="background-color: #92d995;border-radius: 5px;">-->
+<!--          <div class="container  mt-2 p-2 mb-2" style="border: 1px solid grey;">-->
+<!--            <form th:action="@{/create}" method="post" th:object="${customerDto}">-->
+<!--              <h5 class="text-center">THÊM MỚI KHÁCH HÀNG</h5>-->
+<!--              <div class="col-12">-->
+<!--                <label class="form-label">Họ tên</label>-->
+<!--                <input type="text" class="form-control" th:field="*{name}">-->
+<!--              </div>-->
+<!--              <div class="mb-3 text-danger" th:errors="*{name}"></div>-->
 
-              <div class="col-12">
-                <label class="form-label">Giới tính</label>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" th:field="*{gender}"
-                         th:value="0" id="flexRadioDefault1">
-                  <label class="form-check-label" for="flexRadioDefault1">
-                    Nữ
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" th:field="*{gender}"
-                         th:value="1" id="flexRadioDefault2"
-                         checked>
-                  <label class="form-check-label" for="flexRadioDefault2">
-                    Nam
-                  </label>
-                </div>
-              </div>
+<!--              <div class="col-12">-->
+<!--                <label class="form-label">Giới tính</label>-->
+<!--                <div class="form-check">-->
+<!--                  <input class="form-check-input" type="radio" th:field="*{gender}"-->
+<!--                         th:value="0">-->
+<!--                  <label class="form-check-label" for="flexRadioDefault1">-->
+<!--                    Nữ-->
+<!--                  </label>-->
+<!--                </div>-->
+<!--                <div class="form-check">-->
+<!--                  <input class="form-check-input" type="radio" th:field="*{gender}"-->
+<!--                         th:value="1" -->
+<!--                         checked>-->
+<!--                  <label class="form-check-label" for="flexRadioDefault2">-->
+<!--                    Nam-->
+<!--                  </label>-->
+<!--                </div>-->
+<!--              </div>-->
 
-              <div class="col-md-12">
-                <label class="form-label">Ngày sinh</label>
-                <input type="date" class="form-control" th:field="*{dateOfBirth}">
-              </div>
-              <div class="mb-3 text-danger" th:errors="*{dateOfBirth}"></div>
+<!--              <div class="col-md-12">-->
+<!--                <label class="form-label">Ngày sinh</label>-->
+<!--                <input type="date" class="form-control" th:field="*{dateOfBirth}">-->
+<!--              </div>-->
+<!--              <div class="mb-3 text-danger" th:errors="*{dateOfBirth}"></div>-->
 
-              <div class="col-md-12">
-                <label class="form-label">Số chứng minh</label>
-                <input type="text" class="form-control" th:field="*{idCard}">
-              </div>
-              <div class="mb-3 text-danger" th:errors="*{idCard}"></div>
+<!--              <div class="col-md-12">-->
+<!--                <label class="form-label">Số chứng minh</label>-->
+<!--                <input type="text" class="form-control" th:field="*{idCard}">-->
+<!--              </div>-->
+<!--              <div class="mb-3 text-danger" th:errors="*{idCard}"></div>-->
 
-              <div class="col-md-12">
-                <label class="form-label">Số điện thoại</label>
-                <input type="text" class="form-control" th:field="*{phoneNumber}">
-              </div>
-              <div class="mb-3 text-danger" th:errors="*{phoneNumber}"></div>
+<!--              <div class="col-md-12">-->
+<!--                <label class="form-label">Số điện thoại</label>-->
+<!--                <input type="text" class="form-control" th:field="*{phoneNumber}">-->
+<!--              </div>-->
+<!--              <div class="mb-3 text-danger" th:errors="*{phoneNumber}"></div>-->
 
-              <div class="col-12">
-                <label class="form-label">Email</label>
-                <input type="text" class="form-control" th:field="*{email}">
-              </div>
-              <div class="mb-3 text-danger" th:errors="*{email}"></div>
+<!--              <div class="col-12">-->
+<!--                <label class="form-label">Email</label>-->
+<!--                <input type="text" class="form-control" th:field="*{email}">-->
+<!--              </div>-->
+<!--              <div class="mb-3 text-danger" th:errors="*{email}"></div>-->
 
-              <div class="col-12">
-                <label class="form-label">Địa chỉ</label>
-                <input type="text" class="form-control" th:field="*{address}">
-              </div>
-              <div class="mb-3 text-danger" th:errors="*{address}"></div>
+<!--              <div class="col-12">-->
+<!--                <label class="form-label">Địa chỉ</label>-->
+<!--                <input type="text" class="form-control" th:field="*{address}">-->
+<!--              </div>-->
+<!--              <div class="mb-3 text-danger" th:errors="*{address}"></div>-->
 
-              <div class="col-12">
-                <label class="form-label">Loại khách hàng</label>
-                <select class="form-select" aria-label="Default select example" th:field="*{customerType}">
-                  <option th:each="item : ${customerTypeList}" th:text="${item.name}" th:value="${item.id}">One</option>
-                </select>
-              </div>
+<!--              <div class="col-12">-->
+<!--                <label class="form-label">Loại khách hàng</label>-->
+<!--                <select class="form-select" aria-label="Default select example" th:field="*{customerType}">-->
+<!--                  <option th:each="item : ${customerTypeList}" th:text="${item.name}" th:value="${item.id}">One</option>-->
+<!--                </select>-->
+<!--              </div>-->
 
-              <div class="col-12 text-center " style="margin-top: 10px;">
-                <button type="submit" class="btn btn-primary">Thêm mới</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<!--              <div class="col-12 text-center " style="margin-top: 10px;">-->
+<!--                <button type="submit" class="btn btn-primary">Thêm mới</button>-->
+<!--              </div>-->
+<!--            </form>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
 
-  <!-- Modal edit Facility -->
-  <div class="modal fade" id="editCustomer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-body container-fluid" style="background-color: #92d995;border-radius: 5px;">
-          <div class="container  mt-2 p-2 mb-2" style="border: 1px solid grey;">
-            <form th:action="@{/create}" method="post" th:object="${customerDto}">
-              <h5 class="text-center">THÊM MỚI KHÁCH HÀNG</h5>
-              <div class="col-12">
-                <label class="form-label">Họ tên</label>
-                <input type="text" class="form-control" th:field="*{name}">
-              </div>
-              <div class="mb-3 text-danger" th:errors="*{name}"></div>
 
-              <div class="col-12">
-                <label class="form-label">Giới tính</label>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" th:field="*{gender}"
-                         th:value="0" id="flexRadioDefault1">
-                  <label class="form-check-label" for="flexRadioDefault1">
-                    Nữ
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" th:field="*{gender}"
-                         th:value="1" id="flexRadioDefault2"
-                         checked>
-                  <label class="form-check-label" for="flexRadioDefault2">
-                    Nam
-                  </label>
-                </div>
-              </div>
-
-              <div class="col-md-12">
-                <label class="form-label">Ngày sinh</label>
-                <input type="date" class="form-control" th:field="*{dateOfBirth}">
-              </div>
-              <div class="mb-3 text-danger" th:errors="*{dateOfBirth}"></div>
-
-              <div class="col-md-12">
-                <label class="form-label">Số chứng minh</label>
-                <input type="text" class="form-control" th:field="*{idCard}">
-              </div>
-              <div class="mb-3 text-danger" th:errors="*{idCard}"></div>
-
-              <div class="col-md-12">
-                <label class="form-label">Số điện thoại</label>
-                <input type="text" class="form-control" th:field="*{phoneNumber}">
-              </div>
-              <div class="mb-3 text-danger" th:errors="*{phoneNumber}"></div>
-
-              <div class="col-12">
-                <label class="form-label">Email</label>
-                <input type="text" class="form-control" th:field="*{email}">
-              </div>
-              <div class="mb-3 text-danger" th:errors="*{email}"></div>
-
-              <div class="col-12">
-                <label class="form-label">Địa chỉ</label>
-                <input type="text" class="form-control" th:field="*{address}">
-              </div>
-              <div class="mb-3 text-danger" th:errors="*{address}"></div>
-
-              <div class="col-12">
-                <label class="form-label">Loại khách hàng</label>
-                <select class="form-select" aria-label="Default select example" th:field="*{customerType}">
-                  <option th:each="item : ${customerTypeList}" th:text="${item.name}" th:value="${item.id}">One</option>
-                </select>
-              </div>
-
-              <div class="col-12 text-center " style="margin-top: 10px;">
-                <button type="submit" class="btn btn-primary">Thêm mới</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
@@ -343,3 +196,4 @@
 <!--    )-->
 <!--  </script>-->
 </div>
+

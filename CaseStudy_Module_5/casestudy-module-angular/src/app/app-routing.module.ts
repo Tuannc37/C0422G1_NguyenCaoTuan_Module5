@@ -1,11 +1,25 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {Routes, RouterModule} from '@angular/router';
+import {CustomerCreateComponent} from "./furama/customer/customer-create/customer-create.component";
+import {CustomerListComponent} from "./furama/customer/customer-list/customer-list.component";
+import {FacilityListComponent} from "./furama/facility/facility-list/facility-list.component";
+import {ContractListComponent} from "./furama/contract/contract-list/contract-list.component";
+import {EmployeeListComponent} from "./furama/employee/employee-list/employee-list.component";
+import {HomeComponent} from "./local-web/home/home.component";
 
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path: '', component: HomeComponent},
+  {path: 'customer', component: CustomerListComponent},
+  {path: 'facility', component: FacilityListComponent},
+  {path: 'contract', component: ContractListComponent},
+  {path: 'employee', component: EmployeeListComponent},
+  {path: 'customer/create', component: CustomerCreateComponent},
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}
