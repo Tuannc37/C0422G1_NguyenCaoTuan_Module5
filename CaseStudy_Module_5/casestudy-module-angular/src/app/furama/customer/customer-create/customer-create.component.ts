@@ -3,6 +3,8 @@ import {FormControl, FormGroup} from "@angular/forms";
 import {CustomerService} from "../../../service/customer-service/customer.service";
 import {CustomerTypeService} from "../../../service/customer-service/customer-type.service";
 import {CustomerType} from "../../../model/customer/customer-type";
+import {Router} from "@angular/router";
+
 
 @Component({
   selector: 'app-customer-create',
@@ -28,9 +30,15 @@ export class CustomerCreateComponent implements OnInit {
 
 
   })
-  constructor( private customerService:CustomerService,private customerTypeService:CustomerTypeService) { }
+  constructor( private customerService:CustomerService,private customerTypeService:CustomerTypeService
+               ,private router: Router) { }
 
   ngOnInit(): void {
+    this.getAllCustomerType();
+  }
+
+  getAllCustomerType() {
+    this.customerTypeList = this.customerTypeService.getAllCustomerType();
   }
 
   submit(){
@@ -38,5 +46,14 @@ export class CustomerCreateComponent implements OnInit {
     this.customerService.saveCustomer(customer);
     this.customerForm.reset();
   }
+
+  // submit() {
+  //   const customer = this.customerForm.value;
+  //   this.customerService.saveCustomer(customer).subscsribe(() => {
+  //     this.router.navigate(['../customer/list']);
+  //     this.toastr.success('Thêm mới thành công', 'Thông báo!');
+  //   });
+  // }
+
 
 }

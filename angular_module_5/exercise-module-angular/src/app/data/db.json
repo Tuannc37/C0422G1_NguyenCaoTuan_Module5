@@ -1,0 +1,80 @@
+{
+  "todos": [
+    {
+      "id": 3,
+      "content": "json-server",
+      "complete": true
+    },
+    {
+      "id": 4,
+      "content": "json-server",
+      "complete": true
+    },
+    {
+      "id": 5,
+      "content": "abc",
+      "complete": false
+    },
+    {
+      "id": 7,
+      "content": "bbb",
+      "complete": false
+    }
+  ],
+  "products": [
+    {
+      "id": 2,
+      "name": "IPhone 7",
+      "price": 2400000,
+      "description": "New",
+      "category": {
+        "id": 2,
+        "name": "Thể loại 2"
+      }
+    },
+    {
+      "id": 3,
+      "name": "IPhone 8",
+      "price": 2400000,
+      "description": "New",
+      "category": {
+        "id": 2,
+        "name": "Thể loại 2"
+      }
+    },
+    {
+      "name": "123",
+      "price": 123,
+      "description": "123",
+      "category": {
+        "id": 2,
+        "name": "Thể loại 2"
+      },
+      "id": 4
+    },
+    {
+      "name": "Sámungggg",
+      "price": 32323,
+      "description": "ewewew",
+      "category": {
+        "id": 2,
+        "name": "Thể loại 2"
+      },
+      "id": 5
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "Thể loại 1"
+    },
+    {
+      "id": 2,
+      "name": "Thể loại 2"
+    },
+    {
+      "id": 3,
+      "name": "Thể loại 3"
+    }
+  ]
+}

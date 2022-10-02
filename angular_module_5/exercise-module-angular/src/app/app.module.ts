@@ -23,7 +23,15 @@ import { ProductCreateComponent } from './ss6-service-router/angular-product-man
 import { DictionaryDetailComponent } from './ss6-service-router/dictionary/dictionary-detail/dictionary-detail.component';
 import { DictionaryPageComponent } from './ss6-service-router/dictionary/dictionary-page/dictionary-page.component';
 import { ProductUpdateComponent } from './ss6-service-router/angular-product-management/product/product-update/product-update.component';
-
+import {HttpClientModule} from "@angular/common/http";
+import { CategoryListComponent } from './ss7-back-end/angular-product/category/category-list/category-list.component';
+import { CategoryCreateComponent } from './ss7-back-end/angular-product/category/category-create/category-create.component';
+import { CategoryUpdateComponent } from './ss7-back-end/angular-product/category/category-update/category-update.component';
+import { ProductListNewComponent } from './ss7-back-end/angular-product/product/product-list-new/product-list-new.component';
+import { ProductUpdateNewComponent } from './ss7-back-end/angular-product/product/product-update-new/product-update-new.component';
+import { ProductCreateNewComponent } from './ss7-back-end/angular-product/product/product-create-new/product-create-new.component';
+import { TodoUpdateComponent } from './ss7-back-end/angular-name-card/todo-update/todo-update.component';
+import { TodoNewComponent } from './ss7-back-end/angular-name-card/todo-new/todo-new.component';
 
 @NgModule({
   declarations: [
@@ -47,12 +55,21 @@ import { ProductUpdateComponent } from './ss6-service-router/angular-product-man
     DictionaryDetailComponent,
     DictionaryPageComponent,
     ProductUpdateComponent,
+    CategoryListComponent,
+    CategoryCreateComponent,
+    CategoryUpdateComponent,
+    ProductListNewComponent,
+    ProductUpdateNewComponent,
+    ProductCreateNewComponent,
+    TodoUpdateComponent,
+    TodoNewComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

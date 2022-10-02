@@ -93,4 +93,8 @@ export class CustomerService {
     this.customerList.splice(index, 1);
   }
 
+
+  // search(nameSearch: FormControl, customerTypeId: FormControl) {
+  //
+  // }
 }
