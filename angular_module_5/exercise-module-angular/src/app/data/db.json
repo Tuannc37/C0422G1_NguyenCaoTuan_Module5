@@ -1,24 +1,14 @@
 {
   "todos": [
     {
-      "id": 3,
-      "content": "json-server",
-      "complete": true
-    },
-    {
-      "id": 4,
-      "content": "json-server",
-      "complete": true
-    },
-    {
-      "id": 5,
-      "content": "abc",
+      "id": 10,
+      "content": "dd",
       "complete": false
     },
     {
-      "id": 7,
-      "content": "bbb",
-      "complete": false
+      "content": "fdfd",
+      "complete": false,
+      "id": 11
     }
   ],
   "products": [
@@ -51,16 +41,6 @@
         "name": "Thể loại 2"
       },
       "id": 4
-    },
-    {
-      "name": "Sámungggg",
-      "price": 32323,
-      "description": "ewewew",
-      "category": {
-        "id": 2,
-        "name": "Thể loại 2"
-      },
-      "id": 5
     }
   ],
   "category": [

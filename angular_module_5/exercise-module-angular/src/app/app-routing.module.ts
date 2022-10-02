@@ -72,8 +72,13 @@ const routes: Routes = [
     component: CategoryUpdateComponent
   },
 
+
   {
-    path: 'edit/:id',
+    path: 'todo',
+    component: TodoNewComponent
+  },
+  {
+    path: 'todo/edit/:id',
     component: TodoUpdateComponent
   },
 

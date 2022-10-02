@@ -16,9 +16,7 @@ export class TodoNewComponent implements OnInit {
   constructor(private todoService: TodoService) { }
 
   ngOnInit(): void {
-    this.todoService.getAll().subscribe(todo => {
-      this.todos = todo;
-    });
+    this.getAll();
   }
 
   toggleTodo(i: number) {
@@ -29,19 +27,26 @@ export class TodoNewComponent implements OnInit {
     const value = this.content.value;
     if (value) {
       const todo: Todo = {
-        id: this.id++,
         content: value,
         complete: false
       };
-      this.todoService.save(todo).subscribe(() => {
-        this.content.reset();
+      this.todoService.save(todo).subscribe( r => {
+        this.getAll();
       });
+      this.content.reset();
     }
   }
 
-  deleteTodo(id: number) {
-    this.todoService.delete(id).subscribe(() => {
-      this.ngOnInit();
+  delete(id: number) {
+    this.todoService.delete(id).subscribe(r => {
+      this.getAll();
+    });
+  }
+
+  getAll() {
+    this.todoService.getAll().subscribe(todos => {
+      console.log(todos);
+      this.todos = todos;
     });
   }
 

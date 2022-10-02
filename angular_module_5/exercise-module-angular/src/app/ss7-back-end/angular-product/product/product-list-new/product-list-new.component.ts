@@ -12,7 +12,6 @@ export class ProductListNewComponent implements OnInit {
   deleteId: number;
   deleteName: string;
   products: Product[] = [];
-  valueDelete = [];
 
   constructor(private productService: ProductService,
               private router: Router) {
