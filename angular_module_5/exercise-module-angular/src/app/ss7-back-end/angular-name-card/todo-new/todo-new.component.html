@@ -11,7 +11,7 @@
         <li>id: {{i + 1}}</li>
         <li>content: {{todo.content}}</li>
         <li><button class="btn btn-danger" (click)="delete(todo.id)">delete</button></li>
-        <li><button class="btn btn-primary mt-2" [routerLink]="['todo/edit', todo.id]">edit</button></li>
+        <li><button class="btn btn-primary mt-2" [routerLink]="['/todo/edit', todo.id]">edit</button></li>
       </ul>
     </li>
   </ul>

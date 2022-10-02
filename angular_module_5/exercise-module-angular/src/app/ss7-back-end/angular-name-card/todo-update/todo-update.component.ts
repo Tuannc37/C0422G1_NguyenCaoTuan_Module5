@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup} from "@angular/forms";
 import {TodoService} from "../service/todo.service";
-import {ActivatedRoute, ParamMap} from "@angular/router";
+import {ActivatedRoute, ParamMap, Router} from "@angular/router";
 
 @Component({
   selector: 'app-todo-update',
@@ -14,7 +14,7 @@ export class TodoUpdateComponent implements OnInit {
   id: number;
 
   constructor(private todoService: TodoService,
-              private activatedRoute: ActivatedRoute) {
+              private activatedRoute: ActivatedRoute,private router:Router) {
     this.todoForm = new FormGroup({
       id: new FormControl(),
       content: new FormControl(),
@@ -40,6 +40,7 @@ export class TodoUpdateComponent implements OnInit {
   edit(id) {
     const todo = this.todoForm.value;
     this.todoService.update(id, todo).subscribe();
+    this.router.navigateByUrl('todo');
   }
 
 }
