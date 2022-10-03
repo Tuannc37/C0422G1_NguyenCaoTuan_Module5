@@ -30,7 +30,7 @@ export class FacilityListComponent implements OnInit {
   }
 
   getListAllFacility(){
-    this.facilityList = this.facilityService.getAllFacility();
+    this.facilityService.getAllFacility().subscribe(facility => this.facilityList = facility);
   }
 
   getListAllFacilityType(){
@@ -47,7 +47,10 @@ export class FacilityListComponent implements OnInit {
   }
 
   delete(idDelete: any) {
-    this.facilityService.delete(idDelete);
-    this.ngOnInit();
+    this.facilityService.deleteFacility(idDelete).subscribe(() =>{
+      alert('Xoá thông tin thành công');
+      this.getListAllFacility();
+    });
   }
+
 }

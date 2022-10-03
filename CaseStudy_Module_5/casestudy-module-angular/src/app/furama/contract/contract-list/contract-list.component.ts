@@ -32,11 +32,11 @@ export class ContractListComponent implements OnInit {
   }
 
   getAllListCustomer(){
-    this.customerList = this.customerService.getAllCustomer();
+    this.customerService.getAllCustomer().subscribe(customers => this.customerList = customers);
   }
 
   getAllListFacility(){
-    this.facilityList = this.facilityService.getAllFacility();
+    this.facilityService.getAllFacility().subscribe(facility => this.facilityList = facility);
   }
 
   deleteContract(temp:Contract){

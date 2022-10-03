@@ -1,7 +1,11 @@
 form{
   width: 500px;
-  background-color: whitesmoke;
+  background-color: #35322d;
+  color: white;
   padding: 20px;
   margin: 40px auto;
   border-radius: 10px;
+}
+button.btn.btn-primary {
+  background-color: #ffb03b;
 }

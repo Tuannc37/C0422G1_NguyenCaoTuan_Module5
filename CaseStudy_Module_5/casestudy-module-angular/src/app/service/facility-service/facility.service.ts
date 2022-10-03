@@ -1,104 +1,67 @@
 import { Injectable } from '@angular/core';
 import {Facility} from "../../model/facility/facility";
+import {environment} from "../../../environments/environment";
+import {FacilityTypeService} from "./facility-type.service";
+import {RentTypeService} from "./rent-type.service";
+import {HttpClient} from "@angular/common/http";
+import {Observable} from "rxjs";
+
+const API_URL = `${environment.apiUrl}`;
 
 @Injectable({
   providedIn: 'root'
 })
 export class FacilityService {
-  facilityList: Facility[] = [
-    {
-      id: 1,
-      name: "Villa Beach Front",
-      area: 25000,
-      cost: 10000000,
-      maxPeople: 10,
-      standardRoom: "vip",
-      descriptionOtherConvenience: "Có hồ bơi",
-      poolArea: 500,
-      numberOfFloors: 4,
-      facilityFree: "Karaoke",
-      rentType: {
-        id: 1,
-        name: "year"
-      },
-      facilityType: {
-        id: 1,
-        name: "Villa"
-      }
-    },
+  facilityList: Facility[] = [];
 
-    {
-      id: 2,
-      name: "Villa Beach Front",
-      area: 25000,
-      cost: 10000000,
-      maxPeople: 10,
-      standardRoom: "vip",
-      descriptionOtherConvenience: "Có hồ bơi",
-      poolArea: 500,
-      numberOfFloors: 4,
-      facilityFree: "Karaoke",
-      rentType: {
-        id: 3,
-        name: "month"
-      },
-      facilityType: {
-        id: 2,
-        name: "House"
-      }
-    },
-
-    {
-      id: 3,
-      name: "Villa Beach Front",
-      area: 25000,
-      cost: 10000000,
-      maxPeople: 10,
-      standardRoom: "vip",
-      descriptionOtherConvenience: "Có hồ bơi",
-      poolArea: 500,
-      numberOfFloors: 4,
-      facilityFree: "Karaoke",
-      rentType: {
-        id: 3,
-        name: "year"
-      },
-      facilityType: {
-        id: 3,
-        name: "Room"
-      }
-    },
-
-    {
-      id: 4,
-      name: "Villa Beach Front",
-      area: 25000,
-      cost: 10000000,
-      maxPeople: 10,
-      standardRoom: "vip",
-      descriptionOtherConvenience: "Có hồ bơi",
-      poolArea: 500,
-      numberOfFloors: 4,
-      facilityFree: "Karaoke",
-      rentType: {
-        id: 4,
-        name: "hour"
-      },
-      facilityType: {
-        id: 1,
-        name: "Villa"
-      }
-    },
-  ]
-
-  getAllFacility(){
-    return this.facilityList;
+  constructor(private facilityType: FacilityTypeService,
+              private rentType: RentTypeService,
+              private httpClient: HttpClient) {
   }
 
-  delete(id: number) {
-    const index = this.facilityList.findIndex(facility => facility.id === id);
-    this.facilityList.splice(index, 1);
+  getAllFacility(): Observable<Facility[]> {
+    return this.httpClient.get<Facility[]>(API_URL + '/facility');
   }
 
-  constructor() { }
+  saveFacility(facility: Facility) {
+    this.setValueFacility(facility);
+    return this.httpClient.post<Facility>(`${API_URL}/facility`, facility);
+  }
+
+  getByIdFacility(id: number): Observable<Facility> {
+    return this.httpClient.get<Facility>(`${API_URL}/facility/${id}`);
+  }
+
+  editFacility(id: number, facility: Facility) {
+    this.setValueFacility(facility);
+    return this.httpClient.put<Facility>(`${API_URL}/facility/${id}`, facility);
+  }
+
+  deleteFacility(id) {
+    return this.httpClient.delete<Facility>(`${API_URL}/facility/${id}`);
+  }
+
+  setValueFacility(facility: Facility) {
+    for (const item of this.facilityType.facilityTypeList) {
+      if (facility.facilityType === item.id) {
+        facility.facilityType = item;
+      }
+    }
+    for (const item of this.rentType.rentTypeList) {
+      if (facility.rentType === item.id) {
+        facility.rentType = item;
+      }
+    }
+    if (facility.facilityType.id === 1) {
+      facility.facilityFree = null;
+    } else if (facility.facilityType.id === 2) {
+      facility.poolArea = 0;
+      facility.facilityFree = null;
+    } else if (facility.facilityType.id === 3) {
+      facility.standardRoom = null;
+      facility.descriptionOtherConvenience = null;
+      facility.numberOfFloors = 0;
+      facility.poolArea = 0;
+    }
+  }
 }

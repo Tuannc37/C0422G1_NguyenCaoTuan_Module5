@@ -8,6 +8,7 @@ import {EmployeeListComponent} from "./furama/employee/employee-list/employee-li
 import {HomeComponent} from "./local-web/home/home.component";
 import {CustomerUpdateComponent} from "./furama/customer/customer-update/customer-update.component";
 import {FacilityCreateComponent} from "./furama/facility/facility-create/facility-create.component";
+import {FacilityUpdateComponent} from "./furama/facility/facility-update/facility-update.component";
 
 
 const routes: Routes = [
@@ -19,6 +20,7 @@ const routes: Routes = [
 
   {path: 'facility', component: FacilityListComponent},
   {path: 'facility/create', component: FacilityCreateComponent},
+  {path: 'facility/update/:id', component: FacilityUpdateComponent},
 
   {path: 'contract', component: ContractListComponent},
 

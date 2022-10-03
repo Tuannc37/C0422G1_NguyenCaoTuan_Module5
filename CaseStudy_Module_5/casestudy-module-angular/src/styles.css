@@ -1,4 +1,6 @@
 @import "~bootstrap/dist/css/bootstrap.css";
+@import '~ngx-toastr/toastr.css';
+
 
 /**
 * Template Name: Delicious - v4.9.0
