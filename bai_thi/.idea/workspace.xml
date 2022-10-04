@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="097d6a76-f569-4cbd-91d1-0ac1e37fb10b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/bai_thi.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-module-angular/src/assets/data/datatest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-module-angular/src/assets/image/06-2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-module-angular/src/assets/image/1-garden-deluxe-furama-resort-tgroup-travel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-module-angular/src/assets/image/10953_17080216380054845067.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-module-angular/src/assets/image/FRD_Airport_Staff_Service_-2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-module-angular/src/assets/image/Logo-FURAMA-RESORT.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-module-angular/src/assets/image/bedroom-beachfront-villa-furama-da-nang.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-module-angular/src/assets/image/carousel_image_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-module-angular/src/assets/image/carousel_image_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-module-angular/src/assets/image/carousel_image_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-module-angular/src/assets/image/create_background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-module-angular/src/assets/image/f9-768x382.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-module-angular/src/assets/image/facility-1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-module-angular/src/assets/image/hinh-anh-thuc-te-furama-resort.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-module-angular/src/assets/image/lagoon-garden-superoir-furama-resort-da-nang.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-module-angular/src/assets/image/logo@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-module-angular/src/assets/image/logo_furama_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-module-angular/src/assets/image/th (1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-module-angular/src/assets/image/th.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-module-angular/src/assets/img/events-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-module-angular/src/assets/img/slide/slide-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-module-angular/src/assets/img/slide/slide-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-module-angular/src/assets/img/slide/slide-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-module-angular/src/assets/img/specials-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-module-angular/src/assets/img/testimonials/testimonials-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-module-angular/src/assets/img/testimonials/testimonials-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-module-angular/src/assets/img/testimonials/testimonials-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-module-angular/src/assets/img/testimonials/testimonials-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-module-angular/src/assets/img/testimonials/testimonials-5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudy_Module_5/casestudy-module-angular/src/assets/data/database.json" beforeDir="false" afterPath="$PROJECT_DIR$/../CaseStudy_Module_5/casestudy-module-angular/src/assets/data/database.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2Ff9z8ai1y1KeOr5amrn65BGktO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test-module-angular/src/assets" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="D:\C0422G1_NguyenCaoTuan_Module5\bai_thi\test-module-angular\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\C0422G1_NguyenCaoTuan_Module5\bai_thi\test-module-angular\src\app\angular-test\customer" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\C0422G1_NguyenCaoTuan_Module5\bai_thi\test-module-angular\src\assets" />
+      <recent name="D:\C0422G1_NguyenCaoTuan_Module5\bai_thi\test-module-angular\src\app" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="097d6a76-f569-4cbd-91d1-0ac1e37fb10b" name="Default Changelist" comment="" />
+      <created>1664872530929</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664872530929</updated>
+      <workItem from="1664872532527" duration="6319000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

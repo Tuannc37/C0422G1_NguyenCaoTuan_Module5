@@ -1,0 +1,11 @@
+form{
+  width: 500px;
+  background-color: #5b9b5e;
+  color: white;
+  padding: 20px;
+  margin: 40px auto;
+  border-radius: 10px;
+}
+button.btn.btn-primary {
+  background-color: #ffb03b;
+}

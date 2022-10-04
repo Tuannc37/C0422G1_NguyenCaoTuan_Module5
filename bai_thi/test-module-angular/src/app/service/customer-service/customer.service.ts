@@ -1,0 +1,52 @@
+import { Injectable } from '@angular/core';
+import {environment} from "../../../environments/environment";
+import {Customer} from "../../model/customer";
+import {HttpClient} from "@angular/common/http";
+import {CustomerTypeService} from "./customer-type.service";
+import {Observable} from "rxjs";
+
+const SERVICE_URL = `${environment.apiUrl}`;
+@Injectable({
+  providedIn: 'root'
+})
+export class CustomerService {
+  customerList:Customer[] = [];
+
+  constructor(private httpClient: HttpClient,private customerTypeService:CustomerTypeService) {
+  }
+
+  getAllCustomer():Observable<Customer[]>{
+    return this.httpClient.get<Customer[]>(SERVICE_URL + '/customerList');
+  }
+
+  saveCustomer(customer: Customer): Observable<Customer> {
+    this.setValueCustomerType(customer);
+    return this.httpClient.post<Customer>(SERVICE_URL + '/customerList', customer);
+  }
+
+  findByIdCustomer(id: number): Observable<Customer> {
+    return this.httpClient.get<Customer>(`${SERVICE_URL}/customerList/${id}`);
+  }
+
+  deleteCustomer(id: number): Observable<Customer> {
+    return this.httpClient.delete<Customer>(`${SERVICE_URL}/customerList/${id}`);
+  }
+
+  editCustomer(id: number, customer: Customer): Observable<Customer> {
+    this.setValueCustomerType(customer);
+    return this.httpClient.put<Customer>(`${SERVICE_URL}/customerList/${id}`, customer);
+  }
+
+  setValueCustomerType(customer) {
+    for (const item of this.customerTypeService.customerTypeList) {
+      if (item.id === customer.customerType) {
+        customer.customerType = item;
+      }
+    }
+  }
+
+  searchCustomer(nameCustomer: string, idCard: string): Observable<Customer[]> {
+    return this.httpClient.get<Customer[]>(`${SERVICE_URL}/customerList?name_like=${nameCustomer}&idCard_like=${idCard}`);
+  }
+}
+
