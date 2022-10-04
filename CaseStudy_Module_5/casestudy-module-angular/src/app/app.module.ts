@@ -19,8 +19,6 @@ import {HttpClientModule} from "@angular/common/http";
 import { FacilityUpdateComponent } from './furama/facility/facility-update/facility-update.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {NgxPaginationModule} from "ngx-pagination";
-import {ToastrModule} from "ngx-toastr";
-
 
 @NgModule({
   declarations: [
@@ -46,15 +44,6 @@ import {ToastrModule} from "ngx-toastr";
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    ToastrModule.forRoot(
-      {
-        timeOut: 2000,
-        closeButton: true,
-        progressBar: true,
-        positionClass: 'toast-top-center',
-        preventDuplicates: true
-      }
-    ),
     NgxPaginationModule
   ],
   providers: [],

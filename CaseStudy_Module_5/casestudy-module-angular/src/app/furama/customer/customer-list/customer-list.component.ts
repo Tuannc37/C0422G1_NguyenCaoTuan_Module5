@@ -4,7 +4,7 @@ import {CustomerType} from "../../../model/customer/customer-type";
 import {CustomerService} from "../../../service/customer-service/customer.service";
 import {CustomerTypeService} from "../../../service/customer-service/customer-type.service";
 import {FormControl, FormGroup} from "@angular/forms";
-import {ToastrService} from "ngx-toastr";
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-customer',
@@ -16,13 +16,13 @@ export class CustomerListComponent implements OnInit {
   deleteId: number;
   deleteName: string;
   customerList: Customer[] = [];
+  customerF: Customer = {};
   customerTypeList: CustomerType[] = [];
   searchForm: FormGroup;
   p = 1;
 
   constructor(private customerService: CustomerService,
-              private customerTypeService: CustomerTypeService,
-              private toastr: ToastrService) {
+              private customerTypeService: CustomerTypeService) {
   }
 
   ngOnInit(): void {
@@ -39,6 +39,10 @@ export class CustomerListComponent implements OnInit {
     this.customerService.getAllCustomer().subscribe(customers => this.customerList = customers);
   }
 
+  getInfoToModal(customers: Customer) {
+    this.customerF = customers;
+  }
+
   searchCustomer() {
     this.customerService.searchCustomer(this.searchForm.value.nameSearch, this.searchForm.value.searchIdCard).subscribe(data => {
       this.customerList = data;
@@ -53,10 +57,10 @@ export class CustomerListComponent implements OnInit {
     this.deleteName = temp.name;
   }
 
-  delete(idDelete: any) {
+  deleteCustomerJson(idDelete: number) {
     this.customerService.deleteCustomer(idDelete).subscribe(() => {
-      this.getAll();
-      this.toastr.success('Xoá thông tin thành công');
+      Swal.fire('tieu de', 'Xóa thông tin thành công!', 'success');
+      this.getAll()
     });
   }
 

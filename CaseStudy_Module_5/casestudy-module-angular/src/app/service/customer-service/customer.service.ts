@@ -16,25 +16,25 @@ export class CustomerService {
   }
 
   getAllCustomer():Observable<Customer[]>{
-    return this.httpClient.get<Customer[]>(SERVICE_URL + '/customers');
+    return this.httpClient.get<Customer[]>(SERVICE_URL + '/customerList');
   }
 
   saveCustomer(customer: Customer): Observable<Customer> {
     this.setValueCustomerType(customer);
-    return this.httpClient.post<Customer>(SERVICE_URL + '/customers', customer);
+    return this.httpClient.post<Customer>(SERVICE_URL + '/customerList', customer);
   }
 
   findByIdCustomer(id: number): Observable<Customer> {
-    return this.httpClient.get<Customer>(`${SERVICE_URL}/customers/${id}`);
+    return this.httpClient.get<Customer>(`${SERVICE_URL}/customerList/${id}`);
   }
 
   deleteCustomer(id: number): Observable<Customer> {
-    return this.httpClient.delete<Customer>(`${SERVICE_URL}/customers/${id}`);
+    return this.httpClient.delete<Customer>(`${SERVICE_URL}/customerList/${id}`);
   }
 
   editCustomer(id: number, customer: Customer): Observable<Customer> {
     this.setValueCustomerType(customer);
-    return this.httpClient.put<Customer>(`${SERVICE_URL}/customers/${id}`, customer);
+    return this.httpClient.put<Customer>(`${SERVICE_URL}/customerList/${id}`, customer);
   }
 
   setValueCustomerType(customer) {
@@ -46,7 +46,7 @@ export class CustomerService {
   }
 
   searchCustomer(nameCustomer: string, idCard: string): Observable<Customer[]> {
-    return this.httpClient.get<Customer[]>(SERVICE_URL + "?name_like=" + nameCustomer + "&idCard_like=" + idCard);
+    return this.httpClient.get<Customer[]>(`${SERVICE_URL}/customerList?name_like=${nameCustomer}&idCard_like=${idCard}`);
   }
 
 }

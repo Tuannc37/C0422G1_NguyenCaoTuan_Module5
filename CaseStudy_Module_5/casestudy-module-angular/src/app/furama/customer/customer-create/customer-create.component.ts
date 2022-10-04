@@ -6,8 +6,6 @@ import {CustomerType} from "../../../model/customer/customer-type";
 import {Router} from "@angular/router";
 import {ToastrService} from "ngx-toastr";
 
-
-
 @Component({
   selector: 'app-customer-create',
   templateUrl: './customer-create.component.html',
