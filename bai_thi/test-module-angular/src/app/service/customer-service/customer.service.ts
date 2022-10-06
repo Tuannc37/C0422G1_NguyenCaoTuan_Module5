@@ -25,7 +25,7 @@ export class CustomerService {
   }
 
   findByName(name, page): Observable<Customer[]> {
-    return this.httpClient.get<Customer[]>(SERVICE_URL + "/customer/api?page=" + page + "&name=" + name + "&address=" + name);
+    return this.httpClient.get<Customer[]>(SERVICE_URL + "/customer/api?page=" + page + "&name=" + name);
   }
 
   saveCustomer(customer: Customer): Observable<Customer> {
