@@ -4,7 +4,7 @@ import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {CustomerType} from "../../../model/customer-type";
 import {CustomerService} from "../../../service/customer-service/customer.service";
 import {ActivatedRoute, ParamMap, Router} from "@angular/router";
-import {CustomerTypeService} from "../../../service/customer-service/customer-type.service";
+import Swal from "sweetalert2";
 
 @Component({
   selector: 'app-customer-update',
@@ -45,12 +45,14 @@ export class CustomerUpdateComponent implements OnInit {
 
   constructor(private customerService: CustomerService,
               private activatedRoute: ActivatedRoute,
-              private customerTypeService: CustomerTypeService,
               private router: Router) {
   }
 
   ngOnInit(): void {
-    this.getAllCustomerType();
+    this.customerService.getAllCustomerType().subscribe(value => {
+      this.customerTypeList = value;
+    })
+
     this.customerForm();
     this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
       this.id = +paramMap.get('id');
@@ -90,20 +92,17 @@ export class CustomerUpdateComponent implements OnInit {
         Validators.pattern('[a-z0-9]+@[a-z]+\\.[a-z]{2,3}')
       ]),
       address: new FormControl(),
-      customerType: new FormControl()
+      customerType: new FormGroup({
+        id: new FormControl()
+      })
     });
   }
 
   updateSubmit(id) {
     const customer = this.customerUpdateForm.value;
     this.customerService.editCustomer(id, customer).subscribe(() => {
-      this.router.navigateByUrl('/customer');
-      alert('Sửa Thông Tin Thành Công !');
-    });
+      this.router.navigateByUrl('/customer/api');
+      Swal.fire('Sửa Thông Tin Thành Công !');
+    }, e => console.log(e));
   }
-
-  getAllCustomerType() {
-    this.customerTypeList = this.customerTypeService.customerTypeList;
-  }
-
 }

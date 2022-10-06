@@ -5,12 +5,14 @@ import {CustomerComponent} from "./angular-test/customer/customer-list/customer.
 import {CustomerCreateComponent} from "./angular-test/customer/customer-create/customer-create.component";
 import {CustomerUpdateComponent} from "./angular-test/customer/customer-update/customer-update.component";
 
+
 const routes: Routes = [
   {path: '', component: HomeComponent},
 
-  {path: 'customer', component: CustomerComponent},
-  {path: 'customer/create', component: CustomerCreateComponent},
-  {path: 'customer/update/:id', component: CustomerUpdateComponent},
+  {path: 'customer/api', component: CustomerComponent},
+  {path: 'customer/api/add', component: CustomerCreateComponent},
+  {path: 'customer/api/update/:id', component: CustomerUpdateComponent},
+
 ];
 
 @NgModule({

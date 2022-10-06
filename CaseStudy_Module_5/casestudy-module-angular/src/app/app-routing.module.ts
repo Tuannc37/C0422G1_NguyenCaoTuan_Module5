@@ -13,7 +13,6 @@ import {FacilityUpdateComponent} from "./furama/facility/facility-update/facilit
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-
   {path: 'customer', component: CustomerListComponent},
   {path: 'customer/create', component: CustomerCreateComponent},
   {path: 'customer/update/:id', component: CustomerUpdateComponent},

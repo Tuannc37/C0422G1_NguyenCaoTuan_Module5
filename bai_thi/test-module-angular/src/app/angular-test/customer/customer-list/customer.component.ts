@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {Customer} from "../../../model/customer";
-import {CustomerType} from "../../../model/customer-type";
 import {FormControl, FormGroup} from "@angular/forms";
 import {CustomerService} from "../../../service/customer-service/customer.service";
-import {CustomerTypeService} from "../../../service/customer-service/customer-type.service";
 import Swal from 'sweetalert2';
+import {CustomerTypeService} from "../../../service/customer-service/customer-type.service";
 
 @Component({
   selector: 'app-customer',
@@ -17,25 +16,26 @@ export class CustomerComponent implements OnInit {
   deleteName: string;
   customerList: Customer[] = [];
   customerF: Customer = {};
-  customerTypeList: CustomerType[] = [];
   searchForm: FormGroup;
   p = 1;
 
-  constructor(private customerService: CustomerService,
-              private customerTypeService: CustomerTypeService) {
+  constructor(private customerService: CustomerService,private customerTypeService:CustomerTypeService) {
   }
 
   ngOnInit(): void {
     this.getAll();
-    this.customerTypeList = this.customerTypeService.customerTypeList;
     this.searchForm = new FormGroup({
       nameSearch: new FormControl(''),
       searchIdCard: new FormControl('')
     });
-    this.searchForm.patchValue({customerTypeId: 0});
   }
 
   getAll() {
+    // @ts-ignore
+    this.customerService.getAllCustomer().subscribe(customers => this.customerList = customers.content);
+  }
+
+  getAllCartType(){
     this.customerService.getAllCustomer().subscribe(customers => this.customerList = customers);
   }
 
@@ -47,8 +47,6 @@ export class CustomerComponent implements OnInit {
     this.customerService.searchCustomer(this.searchForm.value.nameSearch, this.searchForm.value.searchIdCard).subscribe(data => {
       this.customerList = data;
       console.log(data);
-    }, error => {
-    }, () => {
     })
   }
 

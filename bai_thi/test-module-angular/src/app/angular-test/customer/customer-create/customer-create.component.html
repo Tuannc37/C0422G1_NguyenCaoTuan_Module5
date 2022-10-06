@@ -77,9 +77,9 @@
     <input type="text" class="form-control" formControlName="address">
   </div>
 
-  <div class="col-12">
+  <div class="col-12" formGroupName="customerType">
     <label class="form-label">Loại Khách Hàng</label>
-    <select class="form-select" aria-label="Default select example" name="customerType" formControlName="customerType">
+    <select class="form-select" aria-label="Default select example" name="customerType" formControlName="id">
       <option *ngFor="let item of customerTypeList" [ngValue]="item.id">{{item.name}}</option>
     </select>
   </div>

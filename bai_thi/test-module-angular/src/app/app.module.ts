@@ -15,6 +15,7 @@ import { CustomerComponent } from './angular-test/customer/customer-list/custome
 import { CustomerCreateComponent } from './angular-test/customer/customer-create/customer-create.component';
 import { CustomerUpdateComponent } from './angular-test/customer/customer-update/customer-update.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import { CustomerUpdateComponent } from './angular-test/customer/customer-update
     HomeComponent,
     CustomerComponent,
     CustomerCreateComponent,
-    CustomerUpdateComponent
+    CustomerUpdateComponent,
+
   ],
   imports: [
     BrowserModule,

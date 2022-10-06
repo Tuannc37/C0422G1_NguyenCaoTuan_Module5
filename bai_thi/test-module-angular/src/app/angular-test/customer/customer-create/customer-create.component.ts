@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {CustomerType} from "../../../model/customer-type";
 import {CustomerService} from "../../../service/customer-service/customer.service";
-import {CustomerTypeService} from "../../../service/customer-service/customer-type.service";
 import {Router} from "@angular/router";
 import Swal from 'sweetalert2';
+import {Customer} from "../../../model/customer";
 
 @Component({
   selector: 'app-customer-create',
@@ -14,6 +14,7 @@ import Swal from 'sweetalert2';
 export class CustomerCreateComponent implements OnInit {
 
   customerForm: FormGroup;
+  customerList: Customer[] = [];
   customerTypeList: CustomerType[] = [];
 
   validationMessages = {
@@ -37,17 +38,19 @@ export class CustomerCreateComponent implements OnInit {
     ],
     email: [
       {type: 'required', message: 'Vui lòng nhập email'},
-      {type: 'pattern', message: 'Vui lòng nhập email đúng định dạng abcabc@abc.abc'}
+      {type: 'pattern', message: 'Vui lòng nhập email đúng định dạng abcabc@abc.abc'},
     ]
   };
 
   constructor(private customerService: CustomerService,
-              private customerTypeService: CustomerTypeService,
               private router: Router) {
   }
 
   ngOnInit(): void {
-    this.getAllCustomerType();
+    this.customerService.getAllCustomerType().subscribe(value => {
+      // @ts-ignore
+      this.customerTypeList = value.content;
+    })
     this.customerForm = new FormGroup({
       name: new FormControl('', [
         Validators.required,
@@ -72,25 +75,24 @@ export class CustomerCreateComponent implements OnInit {
 
       email: new FormControl('', [
         Validators.required,
-        Validators.pattern('[a-z0-9]+@[a-z]+\\.[a-z]{2,3}')
+        Validators.pattern('[a-z0-9]+@[a-z]+\\.[a-z]{2,3}'),
+        Validators.minLength(20)
       ]),
 
       address: new FormControl(),
 
-      customerType: new FormControl()
+      customerType: new FormGroup({
+        id: new FormControl()
+      })
     });
   }
 
   submit() {
     const customer = this.customerForm.value;
     this.customerService.saveCustomer(customer).subscribe(() => {
-      this.router.navigateByUrl('/customer');
+      this.router.navigateByUrl('/customer/api');
       Swal.fire('Thêm mới thành công');
-    });
-  }
-
-  getAllCustomerType() {
-    this.customerTypeList = this.customerTypeService.customerTypeList;
+    }, e => console.log(e));
   }
 
 }
