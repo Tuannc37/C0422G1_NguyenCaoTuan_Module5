@@ -18,7 +18,6 @@ export class CustomerComponent implements OnInit {
   name: string = "";
   page: number = 0;
   totalPage: number;
-  searchForm: FormGroup;
 
   constructor(private customerService: CustomerService) {
   }
@@ -27,11 +26,6 @@ export class CustomerComponent implements OnInit {
     this.searchAndListCustomer();
     this.getAllCartType();
   }
-
-  // getAll() {
-  //   // @ts-ignore
-  //   this.customerService.getAllCustomer().subscribe(customers => this.customerList = customers.content);
-  // }
 
   getAllCartType(){
     this.customerService.getAllCustomer().subscribe(customers => this.customerList = customers);
