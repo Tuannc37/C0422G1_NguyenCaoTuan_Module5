@@ -21,6 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="097d6a76-f569-4cbd-91d1-0ac1e37fb10b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/angular-test/customer/customer-list/customer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-angular/src/app/angular-test/customer/customer-list/customer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/service/customer-service/customer.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-angular/src/app/service/customer-service/customer.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +77,7 @@
       <workItem from="1665019270265" duration="4084000" />
       <workItem from="1665025249770" duration="8368000" />
       <workItem from="1665045645083" duration="6218000" />
-      <workItem from="1665055532128" duration="9422000" />
+      <workItem from="1665055532128" duration="9731000" />
     </task>
     <servers />
   </component>
