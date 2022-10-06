@@ -20,41 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="097d6a76-f569-4cbd-91d1-0ac1e37fb10b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../angular_service/src/main/java/com/example/controller/ResFullCartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../angular_service/src/main/java/com/example/model/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../angular_service/src/main/java/com/example/model/HomeCart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../angular_service/src/main/java/com/example/repository/ICartRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../angular_service/src/main/java/com/example/repository/IHomeCartRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../angular_service/src/main/java/com/example/service/ICartService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../angular_service/src/main/java/com/example/service/IHomeCartService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../angular_service/src/main/java/com/example/service/impl/CartService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../angular_service/src/main/java/com/example/service/impl/HomeCartService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../customer/src/main/java/com/example/controller/RestFulCustomerType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../customer/src/main/java/com/example/controller/RestfulCustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../customer/src/main/java/com/example/dto/CustomerDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../customer/src/main/java/com/example/model/customer/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../customer/src/main/java/com/example/model/customer/CustomerType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../customer/src/main/java/com/example/repository/customer/ICustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../customer/src/main/java/com/example/repository/customer/ICustomerTypeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../customer/src/main/java/com/example/service/customer/ICustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../customer/src/main/java/com/example/service/customer/ICustomerTypeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../customer/src/main/java/com/example/service/customer/impl/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../customer/src/main/java/com/example/service/customer/impl/CustomerTypeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CaseStudy_Module_5/casestudy-module-angular/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../CaseStudy_Module_5/casestudy-module-angular/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/angular-test/customer/customer-create/customer-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-angular/src/app/angular-test/customer/customer-create/customer-create.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/angular-test/customer/customer-create/customer-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-angular/src/app/angular-test/customer/customer-create/customer-create.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/angular-test/customer/customer-list/customer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-angular/src/app/angular-test/customer/customer-list/customer.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/angular-test/customer/customer-list/customer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-angular/src/app/angular-test/customer/customer-list/customer.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/angular-test/customer/customer-update/customer-update.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-angular/src/app/angular-test/customer/customer-update/customer-update.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-angular/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-angular/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/local-web/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-angular/src/app/local-web/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/local-web/nav-bar/nav-bar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-angular/src/app/local-web/nav-bar/nav-bar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/service/customer-service/customer-type.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-angular/src/app/service/customer-service/customer-type.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/service/customer-service/customer.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-angular/src/app/service/customer-service/customer.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-module-angular/src/assets/data/datatest.json" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-angular/src/assets/data/datatest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-module-angular/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-angular/src/environments/environment.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +79,7 @@
       <workItem from="1665019270265" duration="4084000" />
       <workItem from="1665025249770" duration="8368000" />
       <workItem from="1665045645083" duration="6218000" />
-      <workItem from="1665055532128" duration="5764000" />
+      <workItem from="1665055532128" duration="9113000" />
     </task>
     <servers />
   </component>

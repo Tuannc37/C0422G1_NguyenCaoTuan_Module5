@@ -24,8 +24,8 @@ export class CustomerService {
     return this.httpClient.get<CustomerType[]>(" http://localhost:8080/customerType/api")
   }
 
-  findByIdCustomerType(id: number): Observable<CustomerType> {
-    return this.httpClient.get<CustomerType>(`http://localhost:3000/customerType/`+id);
+  findByName(name, page): Observable<Customer[]> {
+    return this.httpClient.get<Customer[]>(SERVICE_URL + "/customer/api?page=" + page + "&name=" + name + "&address=" + name);
   }
 
   saveCustomer(customer: Customer): Observable<Customer> {
