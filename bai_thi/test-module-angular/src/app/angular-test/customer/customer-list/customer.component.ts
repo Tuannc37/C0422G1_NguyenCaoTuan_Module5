@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import {Customer} from "../../../model/customer";
-import {FormControl, FormGroup} from "@angular/forms";
 import {CustomerService} from "../../../service/customer-service/customer.service";
 import Swal from 'sweetalert2';
 

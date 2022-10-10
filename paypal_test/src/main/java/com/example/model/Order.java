@@ -1,16 +1,16 @@
 package com.example.model;
 
-public class Oder {
+public class Order {
     private double price;
     private String currency;
     private String method;
     private String intent;
     private String description;
 
-    public Oder() {
+    public Order() {
     }
 
-    public Oder(double price, String currency, String method, String intent, String description) {
+    public Order(double price, String currency, String method, String intent, String description) {
         this.price = price;
         this.currency = currency;
         this.method = method;
