@@ -20,17 +20,118 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="097d6a76-f569-4cbd-91d1-0ac1e37fb10b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../paypal_test/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../paypal_test/src/main/java/com/example/config/PaypalConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../paypal_test/src/main/java/com/example/controller/PaypalController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../paypal_test/src/main/java/com/example/model/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../paypal_test/src/main/java/com/example/service/PaypalService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../paypal_test/src/main/resources/templates/cancel.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../paypal_test/src/main/resources/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../paypal_test/src/main/resources/templates/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project_spring_1/front_end/fe-spring/src/app/model/port.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project_spring_1/front_end/fe-spring/src/app/model/report-details.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project_spring_1/front_end/fe-spring/src/app/model/report.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project_spring_1/front_end/fe-spring/src/app/model/type-user.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project_spring_1/front_end/fe-spring/src/app/model/user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudy_Module_5/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CaseStudy_Module_5/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../[C0422G1]_Prototype_TuanNC/fe_spring/manager-member-list.css" beforeDir="false" afterPath="$PROJECT_DIR$/../[C0422G1]_Prototype_TuanNC/fe_spring/manager-member-list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../[C0422G1]_Prototype_TuanNC/fe_spring/manager-member-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../[C0422G1]_Prototype_TuanNC/fe_spring/manager-member-list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/angular-test/customer/customer-list/customer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-angular/src/app/angular-test/customer/customer-list/customer.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/angular-test/customer/customer-list/customer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-angular/src/app/angular-test/customer/customer-list/customer.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/browserslist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/angular-test/customer/customer-create/customer-create.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/angular-test/customer/customer-create/customer-create.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/angular-test/customer/customer-create/customer-create.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/angular-test/customer/customer-create/customer-create.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/angular-test/customer/customer-list/customer.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/angular-test/customer/customer-list/customer.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/angular-test/customer/customer-list/customer.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/angular-test/customer/customer-list/customer.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/angular-test/customer/customer-update/customer-update.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/angular-test/customer/customer-update/customer-update.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/angular-test/customer/customer-update/customer-update.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/angular-test/customer/customer-update/customer-update.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/local-web/body/body.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/local-web/body/body.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/local-web/body/body.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/local-web/body/body.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/local-web/footer/footer.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/local-web/footer/footer.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/local-web/footer/footer.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/local-web/footer/footer.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/local-web/home/home.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/local-web/home/home.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/local-web/home/home.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/local-web/home/home.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/local-web/nav-bar/nav-bar.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/local-web/nav-bar/nav-bar.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/local-web/nav-bar/nav-bar.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/local-web/nav-bar/nav-bar.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/model/customer-type.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/model/customer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/service/customer-service/customer-type.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/service/customer-service/customer-type.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/service/customer-service/customer.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/app/service/customer-service/customer.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/assets/data/datatest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/assets/image/06-2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/assets/image/1-garden-deluxe-furama-resort-tgroup-travel.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/assets/image/10953_17080216380054845067.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/assets/image/FRD_Airport_Staff_Service_-2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/assets/image/Logo-FURAMA-RESORT.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/assets/image/bedroom-beachfront-villa-furama-da-nang.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/assets/image/carousel_image_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/assets/image/carousel_image_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/assets/image/carousel_image_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/assets/image/create_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/assets/image/f9-768x382.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/assets/image/facility-1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/assets/image/hinh-anh-thuc-te-furama-resort.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/assets/image/lagoon-garden-superoir-furama-resort-da-nang.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/assets/image/logo@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/assets/image/logo_furama_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/assets/image/th (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/assets/image/th.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/assets/img/events-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/assets/img/slide/slide-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/assets/img/slide/slide-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/assets/img/slide/slide-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/assets/img/specials-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/assets/img/testimonials/testimonials-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/assets/img/testimonials/testimonials-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/assets/img/testimonials/testimonials-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/assets/img/testimonials/testimonials-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/assets/img/testimonials/testimonials-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-angular/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../customer/src/main/java/com/example/controller/RestfulCustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../customer/src/main/java/com/example/controller/RestfulCustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project_spring_1/front_end/fe-spring/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../project_spring_1/front_end/fe-spring/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project_spring_1/front_end/fe-spring/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../project_spring_1/front_end/fe-spring/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project_spring_1/front_end/fe-spring/src/app/manager-meber-list/manager-meber-list.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../project_spring_1/front_end/fe-spring/src/app/manager-meber-list/manager-meber-list.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project_spring_1/front_end/fe-spring/src/app/manager-meber-list/manager-meber-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../project_spring_1/front_end/fe-spring/src/app/manager-meber-list/manager-meber-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project_spring_1/front_end/fe-spring/src/app/manager-meber-list/manager-meber-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../project_spring_1/front_end/fe-spring/src/app/manager-meber-list/manager-meber-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project_spring_1/front_end/fe-spring/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../project_spring_1/front_end/fe-spring/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-boot-paypal-example" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-paypal-example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_git_nh-m" beforeDir="false" afterPath="$PROJECT_DIR$/../test_git_nh-m" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +151,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../project_spring_1/front_end" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -58,7 +159,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="D:\C0422G1_NguyenCaoTuan_Module5\bai_thi\test-module-angular\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="D:\C0422G1_NguyenCaoTuan_Module5\bai_thi\project-fe\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -89,6 +190,10 @@
       <workItem from="1665055532128" duration="11888000" />
       <workItem from="1665280289803" duration="19000" />
       <workItem from="1665316161306" duration="132000" />
+      <workItem from="1665933078972" duration="3198000" />
+      <workItem from="1666008540487" duration="147000" />
+      <workItem from="1667223735747" duration="184000" />
+      <workItem from="1667224437242" duration="9000" />
     </task>
     <servers />
   </component>
@@ -112,10 +217,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1665043564111" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1665316287161">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1666008689900">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1665316287161" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1666008689900" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1665052663464">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
